@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/agendar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" href="img/barbearia.png">
+    <title>Agendamento</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="btn-menu">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <label class="title">Tec Vini</label>
+            <ul>
+                <li><a href="#">AGENDAR</a></li>
+                <li><a href="index.html">VOLTAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cortes Avulsos -->
+        <div class="planos">
+            <h1>Cortes Avulsos</h1>
+        </div>
+        <div class="container">
+            <!-- Cards -->
+            <div class="row">
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Corte Tradidicional</h5>
+                            <p>R$ 30,00</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Corte Tradicional" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Corte Infantil</h5>
+                            <p>R$ 20,00</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Corte Infantil" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Degradê</h5>
+                            <p>R$ 35,00</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Degradê" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Barba Tradicional</h5>
+                            <p>R$ 30,00</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Barba Tradicional" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Combo Tradicional</h5>
+                            <p>R$ 45,00</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Combo Tradicional" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Sobrancelha</h5>
+                            <p>R$ 20,00</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Sobrancelha" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Freestyle</h5>
+                            <p>R$ 50,00</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Freestyle" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Planos Mensais -->
+        <div class="planos">
+            <h1>Planos Mensais</h1>
+        </div>
+        <div class="container">
+            <!-- Cards -->
+            <div class="row">
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Corte Infantil</h5>
+                            <p>R$ 80,00/mês</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Corte Infantil" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Cabelo</h5>
+                            <p>R$ 120,00/mês</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Cabelo" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Cabelo e Barba</h5>
+                            <p>R$ 180,00/mês</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Cabelo e Barba" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Barba</h5>
+                            <p>R$ 50,00/mês</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Barba" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Barba e Cavanhaque</h5>
+                            <p>R$ 70,00/mês</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Barba e Cavanhaque" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <h5>Barbearia Completa</h5>
+                            <p>R$ 250,00/mês</p>
+                            <p>Pagamento efetuado na barbearia.</p>
+                            <a href="javascript:void(0);" class="btn-agendar" data-corte="Barbearia Completa" 
+                            onclick="redirectToForm(this)">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clientes -->
+        <div class="planos">
+            <h1>Clientes</h1>
+        </div>
+        <div class="container">
+            <!-- Cards -->
+            <div class="row">
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 1.jpg" alt="Corte 1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 2.jpg" alt="Corte 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 3.jpg" alt="Corte 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 4.jpg" alt="Corte 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 5.jpg" alt="Corte 5">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 6.jpg" alt="Corte 6">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 7.jpg" alt="Corte 7">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <div class="info-agenda">
+                            <img class="corte-img" src="img/corte 8.jpg" alt="Corte 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-title">Tec Vini</h3>
+            <p class="footer-info">Olá, me chamo Vinicius Alves de Moraes, conhecido como VINI. Sou Dev front-end e
+                developer web, tenho 22 anos de idade, graduando em Ciências da Computação, último semestre do curso.
+            </p>
+            <ul class="footer-redes-sociais">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">Copyright &copy;2024 Tec Vini. Designed by <span class="footer-autor">Vinicius Alves
+                    de Moraes</span></p>
+        </div>
+    </footer>
+
+    <script src="js/tipoCorte.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

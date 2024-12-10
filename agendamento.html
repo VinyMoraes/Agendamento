@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/agendamento.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" href="img/barbearia.png">
+    <title>Horários</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="btn-menu">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <label class="title">Tec Vini</label>
+            <ul>
+                <li><a href="#">AGENDAMENTO</a></li>
+                <li><a href="agendar.html">VOLTAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="d-flex align-items-center max-vh-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card-agendamento">
+                        <h2>Agendar Horário</h2>
+                        <form class="form-agendamento" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="tipo-corte">Tipo de Corte:</label>
+                                <input type="text" id="tipo-corte" name="tipo-corte" class="form-control" readonly>
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="data">Data:</label>
+                                <input type="date" id="data" name="data" class="form-control" required>
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="hora">Hora:</label>
+                                <input type="time" id="hora" name="hora" class="form-control" required>
+                            </div>
+    
+                            <button type="submit" class="btn btn-primary btn-confirmar">Confirmar Agendamento</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-title">Tec Vini</h3>
+            <p class="footer-info">Olá, me chamo Vinicius Alves de Moraes, conhecido como VINI. Sou Dev front-end e
+                developer web, tenho 22 anos de idade, graduando em Ciências da Computação, último semestre do curso.
+            </p>
+            <ul class="footer-redes-sociais">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">Copyright &copy;2024 Tec Vini. Designed by <span class="footer-autor">Vinicius Alves
+                    de Moraes</span></p>
+        </div>
+    </footer>
+
+    <script src="js/LoadCorte.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

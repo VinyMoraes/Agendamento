@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    overflow: hidden;
+    background-color: black;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .info {
+    padding: 15px;
+}
+
+.card .info p {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.sub-info {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.sub-info h2 {
+    font-size: 32px;
+}
+
+.sub-info p {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-agendar {
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 22px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.btn-agendar:hover {
+    background-color: black;
+    color: white;
+    transition: all .5s ease;
+}
